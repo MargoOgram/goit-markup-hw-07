@@ -1,0 +1,45 @@
+.benefits {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    
+}
+.list-benefits {
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+
+.list-benefits .item-ben:not(:last-child) {
+    margin-right: 30px;
+}
+.icon-ben-item {
+    width: 270px;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+
+}
+.title-list {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+    margin: 0;
+    
+}
+.text-list{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.section-benefits {
+    padding-bottom: 47px;
+}
