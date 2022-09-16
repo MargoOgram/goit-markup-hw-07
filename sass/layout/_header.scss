@@ -16,9 +16,6 @@
     background-color: transparent;
     fill: var(--primary-text-color);
 }
-
-
-
 .header-link {
     font-weight: 500;
     font-size: 14px;
@@ -27,16 +24,19 @@
     color: var(--title-text-color);
     text-decoration: none;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    color: var(--accent-color);}
 }
-.header-link:hover,
-.header-link:focus {
-    color: var(--accent-color);
-    
-}
+
 .navigation-link {
     position: relative;
 }
-.current::after {
+.current{
+    color: var(--accent-color);
+    
+    &::after {
     content: "";
     position: absolute;
     display: block;
@@ -47,10 +47,7 @@
     background: #2196F3;
     border: none;
     border-radius: 2px;
-    bottom: -32px;
-}
-.current{
-    color: var(--accent-color);
+    bottom: -32px;}
 }
 .header-contact {
     font-weight: 500;
@@ -60,18 +57,15 @@
     color: var(--primary-text-color);
     text-decoration: none;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-contact:hover,
-.header-contact:focus  {
+    
+    &:hover,
+    &:focus  {
+    color: var(--accent-color);}
+    
+    &:hover .mail-icon,
+    &:focus .mail-icon {
     color: var(--accent-color);
-    
-    
-}
-.header-contact:hover .mail-icon,
-.header-contact:focus .mail-icon {
-    color: var(--accent-color);
-    fill: var(--accent-color);
-    
+    fill: var(--accent-color);}
 }
 .mail-icon {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -83,17 +77,11 @@
     list-style: none;
     margin: 0;
     padding: 0;
-}
-.list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-   
+    
+    .item:not(:last-child) {
+    margin-right: 50px;}
 }
 
-.site-nav-list .item:not(:last-child) {
-    margin-right: 50px;
-}
 .list .header-link.current {
     color: var(--accent-color);
 }
@@ -107,8 +95,6 @@
     margin-top: 0;
     margin-bottom: 0;
 
-
-}
-.list-contact .item + .item  {
-    margin-left: 50px;
+    .item + .item  {
+        margin-left: 50px;}
 }

@@ -8,10 +8,9 @@
     display: flex;
     list-style: none;
     margin-right: 30px;
-}
-
-.list-benefits .item-ben:not(:last-child) {
-    margin-right: 30px;
+    
+    .item-ben:not(:last-child) {
+    margin-right: 30px;}
 }
 .icon-ben-item {
     width: 270px;

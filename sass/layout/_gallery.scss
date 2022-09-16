@@ -14,10 +14,11 @@
 }
 .list-gallery {
     display: flex;
+    
+    .item-gallery:not(:last-child) {
+    margin-right: 30px;}
 }
-.list-gallery .item-gallery:not(:last-child) {
-    margin-right: 30px;
-}
+
 .item-gallery-name {
     font-weight: 700;
     font-size: 14px;
@@ -27,11 +28,8 @@
     text-transform: uppercase;
     color: #FFFFFF;
     margin: 0;
-   
-   
-    
-    
 }
+
 .item-thumb {
     position: relative;
 }
