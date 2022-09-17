@@ -44,12 +44,7 @@
     gap: 10px;
 }
 .team-soc-link {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include soc-icon;
     transition: var(--transition-function);
 
     &:hover,
