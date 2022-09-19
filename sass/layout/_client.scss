@@ -1,11 +1,12 @@
-.client-list {
+.client__title{
+    @extend%title;
+}
+.client__list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-  
 }
-
-.client-link{
+.client__link{
     width: 170px;
     height: 92px;
     border: 1px solid var(--icon-color);
@@ -19,16 +20,13 @@
     &:focus {
     border: 1px solid var(--accent-color);
     border-radius: 4px;}
-    
-    
 }
-
-.client-icon {
+.client__icon {
     fill: var(--icon-color);
     transition: var(--transition-function);
 
-    .client-link:hover &,
-    .client-link:focus & {
+    .client__link:hover &,
+    .client__link:focus & {
      fill:  var(--accent-color);}
 
 }

@@ -1,18 +1,22 @@
 .benefits {
+    padding-bottom: 47px;
+}
+
+.benefits__title {
     position: absolute;
     top: -9999px;
     left: -9999px;
     
 }
-.list-benefits {
+.benefits__list {
     display: flex;
     list-style: none;
     margin-right: 30px;
     
-    .item-ben:not(:last-child) {
+    .benefits__item:not(:last-child) {
     margin-right: 30px;}
 }
-.icon-ben-item {
+.benefits__contents {
     width: 270px;
     height: 120px;
     background:var(--background-accent-color);
@@ -20,7 +24,7 @@
     margin-bottom: 30px;
 
 }
-.title-list {
+.benefits__subtitle {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -30,7 +34,7 @@
     margin: 0;
     
 }
-.text-list{
+.benefits__text{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -39,6 +43,4 @@
     margin-top: 10px;
     margin-bottom: 0;
 }
-.section-benefits {
-    padding-bottom: 47px;
-}
+

@@ -16,7 +16,7 @@
     background-color: transparent;
     fill: var(--primary-text-color);
 }
-.header-link {
+.site-nav-list__link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -49,7 +49,7 @@
     border-radius: 2px;
     bottom: -32px;}
 }
-.header-contact {
+.contact-list__header-contact {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -67,8 +67,8 @@
 .mail-icon {
     transition: var(--transition-function);
 
-    .header-contact:hover &,
-    .header-contact:focus & {
+    .contact-list__header-contact:hover &,
+    .contact-list__header-contact:focus & {
     color: var(--accent-color);
     fill: var(--accent-color);}
 }
@@ -80,7 +80,7 @@
     margin: 0;
     padding: 0;
     
-    .item:not(:last-child) {
+    .site-nav-list__item:not(:last-child) {
     margin-right: 50px;}
 }
 
@@ -89,7 +89,7 @@
 }
 
 
-.list-contact{
+.contact-list{
     padding: 0;
     display: flex;
     list-style: none;
@@ -97,6 +97,6 @@
     margin-top: 0;
     margin-bottom: 0;
 
-    .item + .item  {
+    .contact-list__item + .contact-list__item  {
         margin-left: 50px;}
 }

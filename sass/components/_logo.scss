@@ -3,7 +3,7 @@
     color: var(--accent-color);
     margin-right: 95px;
 }
-.header-logo {
+.logo__header {
     @extend %common-logo;
     color: var(--accent-color-logo);
 }
